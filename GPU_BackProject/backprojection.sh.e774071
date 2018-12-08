@@ -1,0 +1,22 @@
+/var/spool/pbs/mom_priv/jobs/774071.batch.SC: line 1: shpass: command not found
+==24789== NVPROF is profiling process 24789, command: /home/onwubuyag/FinalProject_mpp/GPU_BackProject/main
+==24789== Profiling application: /home/onwubuyag/FinalProject_mpp/GPU_BackProject/main
+==24789== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   92.96%  358.07us         1  358.07us  358.07us  358.07us  backprojection_reduce_numaccess(float*, float, unsigned int, unsigned int, float*)
+                    3.59%  13.825us         1  13.825us  13.825us  13.825us  [CUDA memcpy HtoD]
+                    1.94%  7.4880us         1  7.4880us  7.4880us  7.4880us  [CUDA memcpy DtoH]
+                    1.51%  5.8240us         1  5.8240us  5.8240us  5.8240us  [CUDA memset]
+      API calls:   98.93%  151.83ms         3  50.611ms  149.16us  151.52ms  cudaFree
+                    0.27%  408.48us         3  136.16us  21.950us  358.15us  cudaDeviceSynchronize
+                    0.25%  383.12us         2  191.56us  114.64us  268.48us  cudaMalloc
+                    0.17%  264.38us         1  264.38us  264.38us  264.38us  cudaLaunch
+                    0.13%  205.80us         2  102.90us  58.028us  147.78us  cudaMemcpy
+                    0.11%  174.52us        94  1.8560us     439ns  45.633us  cuDeviceGetAttribute
+                    0.10%  146.63us         1  146.63us  146.63us  146.63us  cuDeviceTotalMem
+                    0.01%  18.288us         1  18.288us  18.288us  18.288us  cudaMemset
+                    0.01%  15.231us         1  15.231us  15.231us  15.231us  cuDeviceGetName
+                    0.01%  10.279us         5  2.0550us     443ns  7.6260us  cudaSetupArgument
+                    0.00%  5.6840us         3  1.8940us     537ns  4.1030us  cuDeviceGetCount
+                    0.00%  2.4520us         1  2.4520us  2.4520us  2.4520us  cudaConfigureCall
+                    0.00%  1.6200us         2     810ns     580ns  1.0400us  cuDeviceGet

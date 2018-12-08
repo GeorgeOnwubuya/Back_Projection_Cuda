@@ -1,0 +1,5 @@
+Allocating device variables...0.000296 s
+Copying device variables...0.002114 s
+Launching kernel...0.039335 s
+Copying data from device to host...0.001763 s
+Writing data to file...0.023466 s

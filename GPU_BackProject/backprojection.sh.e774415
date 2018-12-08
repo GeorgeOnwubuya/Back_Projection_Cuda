@@ -1,0 +1,23 @@
+/var/spool/pbs/mom_priv/jobs/774415.batch.SC: line 1: shpass: command not found
+==5433== NVPROF is profiling process 5433, command: /home/onwubuyag/FinalProject_mpp/GPU_BackProject/main
+==5433== Profiling application: /home/onwubuyag/FinalProject_mpp/GPU_BackProject/main
+==5433== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   96.05%  866.93us         1  866.93us  866.93us  866.93us  backprojection(float*, float, unsigned int, unsigned int, float*)
+                    1.79%  16.192us         1  16.192us  16.192us  16.192us  [CUDA memcpy DtoH]
+                    1.52%  13.696us         1  13.696us  13.696us  13.696us  [CUDA memcpy HtoD]
+                    0.63%  5.7280us         1  5.7280us  5.7280us  5.7280us  [CUDA memset]
+      API calls:   98.77%  148.60ms         3  49.532ms  128.59us  148.32ms  cudaFree
+                    0.60%  904.56us         3  301.52us  11.620us  873.07us  cudaDeviceSynchronize
+                    0.17%  252.78us         2  126.39us  109.25us  143.53us  cudaMalloc
+                    0.12%  186.11us         1  186.11us  186.11us  186.11us  cudaLaunch
+                    0.10%  156.79us        94  1.6670us     440ns  39.929us  cuDeviceGetAttribute
+                    0.09%  140.54us         1  140.54us  140.54us  140.54us  cuDeviceTotalMem
+                    0.07%  101.21us         1  101.21us  101.21us  101.21us  cudaMemcpyAsync
+                    0.04%  63.265us         1  63.265us  63.265us  63.265us  cudaMemcpy
+                    0.01%  17.218us         1  17.218us  17.218us  17.218us  cudaMemset
+                    0.01%  14.550us         1  14.550us  14.550us  14.550us  cuDeviceGetName
+                    0.00%  7.3470us         5  1.4690us     446ns  5.0020us  cudaSetupArgument
+                    0.00%  5.0100us         3  1.6700us     602ns  3.3230us  cuDeviceGetCount
+                    0.00%  2.2850us         1  2.2850us  2.2850us  2.2850us  cudaConfigureCall
+                    0.00%  1.9760us         2     988ns     588ns  1.3880us  cuDeviceGet

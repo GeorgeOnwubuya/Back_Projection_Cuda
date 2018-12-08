@@ -1,0 +1,23 @@
+/var/spool/pbs/mom_priv/jobs/774435.batch.SC: line 1: shpass: command not found
+==6865== NVPROF is profiling process 6865, command: /home/onwubuyag/FinalProject_mpp/GPU_BackProject/main
+==6865== Profiling application: /home/onwubuyag/FinalProject_mpp/GPU_BackProject/main
+==6865== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.61%  39.170ms         1  39.170ms  39.170ms  39.170ms  backprojection_reduce_numaccess(float*, float, unsigned int, unsigned int, float*)
+                    3.87%  1.5874ms         1  1.5874ms  1.5874ms  1.5874ms  [CUDA memcpy HtoD]
+                    0.52%  211.68us         1  211.68us  211.68us  211.68us  [CUDA memcpy DtoH]
+                    0.00%     832ns         1     832ns     832ns     832ns  [CUDA memset]
+      API calls:   78.78%  163.06ms         3  54.353ms  220.59us  162.39ms  cudaFree
+                   18.99%  39.309ms         3  13.103ms  12.393us  39.172ms  cudaDeviceSynchronize
+                    0.96%  1.9811ms         1  1.9811ms  1.9811ms  1.9811ms  cudaMemcpyAsync
+                    0.85%  1.7561ms         1  1.7561ms  1.7561ms  1.7561ms  cudaMemcpy
+                    0.13%  266.50us         2  133.25us  127.45us  139.05us  cudaMalloc
+                    0.09%  195.13us        94  2.0750us     440ns  49.028us  cuDeviceGetAttribute
+                    0.08%  168.24us         1  168.24us  168.24us  168.24us  cuDeviceTotalMem
+                    0.07%  139.71us         1  139.71us  139.71us  139.71us  cudaLaunch
+                    0.03%  70.572us         1  70.572us  70.572us  70.572us  cudaMemset
+                    0.01%  15.226us         1  15.226us  15.226us  15.226us  cuDeviceGetName
+                    0.00%  8.8760us         5  1.7750us     507ns  6.2720us  cudaSetupArgument
+                    0.00%  5.1950us         3  1.7310us     538ns  3.6300us  cuDeviceGetCount
+                    0.00%  1.8480us         1  1.8480us  1.8480us  1.8480us  cudaConfigureCall
+                    0.00%  1.7880us         2     894ns     568ns  1.2200us  cuDeviceGet

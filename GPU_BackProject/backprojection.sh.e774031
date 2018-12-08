@@ -1,0 +1,22 @@
+/var/spool/pbs/mom_priv/jobs/774031.batch.SC: line 1: shpass: command not found
+==22005== NVPROF is profiling process 22005, command: /home/onwubuyag/FinalProject_mpp/GPU_BackProject/main
+==22005== Profiling application: /home/onwubuyag/FinalProject_mpp/GPU_BackProject/main
+==22005== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   93.56%  379.48us         1  379.48us  379.48us  379.48us  backprojection(float*, float, unsigned int, unsigned int, float*)
+                    3.35%  13.568us         1  13.568us  13.568us  13.568us  [CUDA memcpy HtoD]
+                    1.68%  6.8160us         1  6.8160us  6.8160us  6.8160us  [CUDA memcpy DtoH]
+                    1.41%  5.7280us         1  5.7280us  5.7280us  5.7280us  [CUDA memset]
+      API calls:   99.01%  151.46ms         3  50.488ms  115.45us  151.20ms  cudaFree
+                    0.28%  434.68us         3  144.89us  12.911us  404.37us  cudaDeviceSynchronize
+                    0.23%  352.05us         2  176.02us  158.43us  193.62us  cudaMalloc
+                    0.12%  185.83us        94  1.9760us     451ns  49.188us  cuDeviceGetAttribute
+                    0.11%  169.20us         1  169.20us  169.20us  169.20us  cuDeviceTotalMem
+                    0.10%  157.36us         2  78.680us  69.535us  87.825us  cudaMemcpy
+                    0.10%  155.43us         1  155.43us  155.43us  155.43us  cudaLaunch
+                    0.01%  17.977us         1  17.977us  17.977us  17.977us  cuDeviceGetName
+                    0.01%  17.071us         1  17.071us  17.071us  17.071us  cudaMemset
+                    0.01%  7.8340us         5  1.5660us     498ns  5.3010us  cudaSetupArgument
+                    0.00%  6.0560us         3  2.0180us     592ns  4.2460us  cuDeviceGetCount
+                    0.00%  2.1150us         1  2.1150us  2.1150us  2.1150us  cudaConfigureCall
+                    0.00%  2.0270us         2  1.0130us     589ns  1.4380us  cuDeviceGet

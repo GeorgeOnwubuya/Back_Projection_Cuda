@@ -1,0 +1,23 @@
+/var/spool/pbs/mom_priv/jobs/774436.batch.SC: line 1: shpass: command not found
+==6951== NVPROF is profiling process 6951, command: /home/onwubuyag/FinalProject_mpp/GPU_BackProject/main
+==6951== Profiling application: /home/onwubuyag/FinalProject_mpp/GPU_BackProject/main
+==6951== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   96.85%  46.300ms         1  46.300ms  46.300ms  46.300ms  backprojection(float*, float, unsigned int, unsigned int, float*)
+                    2.68%  1.2830ms         1  1.2830ms  1.2830ms  1.2830ms  [CUDA memcpy HtoD]
+                    0.47%  223.93us         1  223.93us  223.93us  223.93us  [CUDA memcpy DtoH]
+                    0.00%     864ns         1     864ns     864ns     864ns  [CUDA memset]
+      API calls:   74.27%  146.07ms         3  48.691ms  151.66us  145.47ms  cudaFree
+                   23.59%  46.401ms         3  15.467ms  14.118us  46.294ms  cudaDeviceSynchronize
+                    0.86%  1.6917ms         1  1.6917ms  1.6917ms  1.6917ms  cudaMemcpyAsync
+                    0.82%  1.6034ms         1  1.6034ms  1.6034ms  1.6034ms  cudaMemcpy
+                    0.15%  287.63us         2  143.82us  140.39us  147.25us  cudaMalloc
+                    0.10%  197.72us        94  2.1030us     466ns  62.113us  cuDeviceGetAttribute
+                    0.09%  178.01us         1  178.01us  178.01us  178.01us  cudaLaunch
+                    0.08%  160.64us         1  160.64us  160.64us  160.64us  cuDeviceTotalMem
+                    0.03%  60.933us         1  60.933us  60.933us  60.933us  cudaMemset
+                    0.01%  15.953us         1  15.953us  15.953us  15.953us  cuDeviceGetName
+                    0.00%  8.0080us         5  1.6010us     469ns  5.6290us  cudaSetupArgument
+                    0.00%  6.2710us         3  2.0900us     529ns  4.4130us  cuDeviceGetCount
+                    0.00%  1.9180us         2     959ns     673ns  1.2450us  cuDeviceGet
+                    0.00%  1.9090us         1  1.9090us  1.9090us  1.9090us  cudaConfigureCall

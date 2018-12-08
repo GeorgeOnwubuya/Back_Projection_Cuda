@@ -1,0 +1,23 @@
+/var/spool/pbs/mom_priv/jobs/774433.batch.SC: line 1: shpass: command not found
+==6690== NVPROF is profiling process 6690, command: /home/onwubuyag/FinalProject_mpp/GPU_BackProject/main
+==6690== Profiling application: /home/onwubuyag/FinalProject_mpp/GPU_BackProject/main
+==6690== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   96.14%  43.403ms         1  43.403ms  43.403ms  43.403ms  backprojection_reduceloopcalc(float*, float, unsigned int, unsigned int, float*)
+                    3.39%  1.5289ms         1  1.5289ms  1.5289ms  1.5289ms  [CUDA memcpy HtoD]
+                    0.48%  215.04us         1  215.04us  215.04us  215.04us  [CUDA memcpy DtoH]
+                    0.00%     832ns         1     832ns     832ns     832ns  [CUDA memset]
+      API calls:   77.08%  160.81ms         3  53.604ms  151.33us  160.22ms  cudaFree
+                   20.85%  43.510ms         3  14.503ms  12.378us  43.404ms  cudaDeviceSynchronize
+                    0.93%  1.9421ms         1  1.9421ms  1.9421ms  1.9421ms  cudaMemcpyAsync
+                    0.74%  1.5489ms         1  1.5489ms  1.5489ms  1.5489ms  cudaMemcpy
+                    0.13%  265.40us         2  132.70us  124.53us  140.87us  cudaMalloc
+                    0.09%  179.73us        94  1.9120us     426ns  47.731us  cuDeviceGetAttribute
+                    0.07%  144.06us         1  144.06us  144.06us  144.06us  cudaLaunch
+                    0.07%  142.99us         1  142.99us  142.99us  142.99us  cuDeviceTotalMem
+                    0.03%  62.452us         1  62.452us  62.452us  62.452us  cudaMemset
+                    0.01%  15.026us         1  15.026us  15.026us  15.026us  cuDeviceGetName
+                    0.00%  8.3180us         5  1.6630us     469ns  5.7290us  cudaSetupArgument
+                    0.00%  5.1280us         3  1.7090us     569ns  3.4000us  cuDeviceGetCount
+                    0.00%  2.0890us         1  2.0890us  2.0890us  2.0890us  cudaConfigureCall
+                    0.00%  1.8340us         2     917ns     571ns  1.2630us  cuDeviceGet
